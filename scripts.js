@@ -1,3 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Add your JavaScript code to handle the survey submission and display the recommendations here
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            const targetId = link.getAttribute("href").slice(1);
+            const target = document.getElementById(targetId);
+            if (!target) {
+                return;
+            }
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    });
 });

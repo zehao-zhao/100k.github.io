@@ -3,41 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Recommendation Demo</title>
+    <title>Startup & Research Brainstorm</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>AI-Powered Recommendation Demo</h1>
-        <p>Discover personalized activities in just 10 seconds</p>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Zehao (Andy) Zhao · Research-to-Startup Brainstorm</p>
+            <h1>New Directions in Research, Engineering, Product, and Startups</h1>
+            <p class="subtitle">
+                A structured brainstorm based on your request. I could not access external research or Google Scholar data
+                in this environment, so I drafted ideas from common AI/ML and systems themes and left clear places to
+                personalize.
+            </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#research">Explore ideas</a>
+                <a class="button secondary" href="#assumptions">Update assumptions</a>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="survey">
-            <h2>Get Started</h2>
-            <p>Please fill out this short survey to receive personalized recommendations:</p>
-            <!-- Add your survey form here -->
+        <section id="assumptions" class="section">
+            <div class="section-header">
+                <h2>Context & Assumptions to Confirm</h2>
+                <p>
+                    I cannot access your ChatGPT history or external profiles from this environment. Please edit the
+                    assumptions below to align with your actual research.
+                </p>
+            </div>
+            <ul class="assumptions">
+                <li><strong>Focus domains:</strong> Applied AI/ML, trustworthy systems, and user-facing intelligence tools.</li>
+                <li><strong>Strengths:</strong> Research-to-product translation, systems thinking, and rapid prototyping.</li>
+                <li><strong>Preference:</strong> Building tooling that makes AI behavior measurable, reliable, and interpretable.</li>
+                <li><strong>Target users:</strong> Researchers, ML engineers, and product teams shipping AI features.</li>
+            </ul>
+            <div class="note">
+                <p><strong>Quick edit:</strong> Replace these bullets with your actual research topics (e.g., papers, lab focus, datasets).</p>
+            </div>
         </section>
-        <section id="movie-recommendations" class="hidden">
-            <h2>Movie Recommendations</h2>
-            <!-- Add movie recommendations content here -->
+
+        <section id="research" class="section">
+            <div class="section-header">
+                <h2>Research Directions</h2>
+                <p>At least two new research directions, each with a concrete hypothesis and validation path.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Adaptive Trust Calibration for AI Assistants</h3>
+                    <p>
+                        Study how to dynamically tune AI confidence signals (scores, explanations, uncertainty) to a user’s
+                        expertise and risk tolerance.
+                    </p>
+                    <ul>
+                        <li><strong>Hypothesis:</strong> Personalized confidence UX reduces overreliance and underuse.</li>
+                        <li><strong>Method:</strong> User studies + instrumented assistant with adjustable feedback intensity.</li>
+                        <li><strong>Outcome:</strong> A measurable framework for trust calibration policies.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Composable Evaluation for Multi-Agent Systems</h3>
+                    <p>
+                        Build evaluation protocols that isolate coordination, memory, and planning in multi-agent LLM systems.
+                    </p>
+                    <ul>
+                        <li><strong>Hypothesis:</strong> Decomposed metrics predict real-world deployment performance.</li>
+                        <li><strong>Method:</strong> Synthetic tasks + real workflows (support, research, coding).</li>
+                        <li><strong>Outcome:</strong> A benchmark suite and open evaluation toolkit.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
-        <section id="music-recommendations" class="hidden">
-            <h2>Music Recommendations</h2>
-            <!-- Add music recommendations content here -->
+
+        <section id="engineering" class="section">
+            <div class="section-header">
+                <h2>Engineering Directions</h2>
+                <p>Systems or tooling ideas that can be built now and later generalized.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>AI Reliability Observatory</h3>
+                    <p>
+                        A developer platform that tracks model drift, hallucination rates, and failure clusters across
+                        production prompts.
+                    </p>
+                    <ul>
+                        <li><strong>MVP:</strong> SDK + dashboard for prompt traces, automatic labeling, and regression alerts.</li>
+                        <li><strong>Why now:</strong> LLM reliability is the #1 blocker for scaling AI features.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Agent Workflow Compiler</h3>
+                    <p>
+                        A tool that converts natural-language tasks into structured workflows with guardrails, retries, and
+                        fallbacks.
+                    </p>
+                    <ul>
+                        <li><strong>MVP:</strong> DSL + visual editor + execution engine.</li>
+                        <li><strong>Impact:</strong> Reduces engineering overhead in building AI agents.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
-        <section id="tv-show-recommendations" class="hidden">
-            <h2>TV Show Recommendations</h2>
-            <!-- Add TV show recommendations content here -->
+
+        <section id="product" class="section">
+            <div class="section-header">
+                <h2>Product Directions</h2>
+                <p>Customer-facing product concepts that could be tested with pilots.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>ResearchOps Copilot</h3>
+                    <p>
+                        A workspace that automates literature reviews, experiment planning, and results summarization for
+                        applied research teams.
+                    </p>
+                    <ul>
+                        <li><strong>Target user:</strong> ML labs and R&D teams.</li>
+                        <li><strong>Moat:</strong> Workflow integration + private knowledge graphs.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Risk-Aware Decision Briefs</h3>
+                    <p>
+                        A tool that converts AI outputs into human-readable briefs with explicit risk, uncertainty, and
+                        validation checklists.
+                    </p>
+                    <ul>
+                        <li><strong>Target user:</strong> Product managers and compliance teams.</li>
+                        <li><strong>Moat:</strong> Trust UX patterns + audit-ready logging.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
-        <section id="youtube-video-recommendations" class="hidden">
-            <h2>YouTube Video Recommendations</h2>
-            <!-- Add YouTube video recommendations content here -->
+
+        <section id="startup" class="section">
+            <div class="section-header">
+                <h2>Startup Concepts</h2>
+                <p>Company-level ideas with go-to-market and differentiation.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Verification Layer for Enterprise AI</h3>
+                    <p>
+                        Build a verification layer that sits between LLMs and enterprise workflows to enforce policy, verify
+                        citations, and block risky outputs.
+                    </p>
+                    <ul>
+                        <li><strong>GTM:</strong> Sell to regulated industries (finance, healthcare, legal).</li>
+                        <li><strong>Differentation:</strong> Deep policy engine + audit trails.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Insight Mining for Product Teams</h3>
+                    <p>
+                        A platform that surfaces customer insights from support logs, research interviews, and usage data with
+                        evidence-backed summaries.
+                    </p>
+                    <ul>
+                        <li><strong>GTM:</strong> Mid-market SaaS product orgs.</li>
+                        <li><strong>Differentation:</strong> Evidence graph + direct links to source data.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
-        <section id="local-activities-recommendations" class="hidden">
-            <h2>Local Activities Recommendations</h2>
-            <!-- Add local activities recommendations content here -->
+
+        <section id="next-steps" class="section">
+            <div class="section-header">
+                <h2>Suggested Next Steps</h2>
+                <p>How to sharpen these ideas once your real research notes are available.</p>
+            </div>
+            <ol class="steps">
+                <li>Paste your actual paper titles, datasets, and project summaries into the assumptions section.</li>
+                <li>Rank the ideas by <strong>personal excitement</strong> and <strong>market urgency</strong>.</li>
+                <li>Pick 1–2 ideas and design a two-week validation sprint (interviews + prototype).</li>
+                <li>Track signals: willingness to pay, integration effort, and measurable outcome improvements.</li>
+            </ol>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>Generated for rapid iteration — update and refine as your research context evolves.</p>
+    </footer>
 </body>
 </html>
