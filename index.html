@@ -20,11 +20,87 @@
             <div class="hero-actions">
                 <a class="button primary" href="#research">Explore ideas</a>
                 <a class="button secondary" href="#assumptions">Update assumptions</a>
+                <a class="button secondary" href="#automation">Run research update</a>
             </div>
         </div>
     </header>
 
     <main>
+        <section id="automation" class="section">
+            <div class="section-header">
+                <h2>Automated Research Update Pipeline</h2>
+                <p>
+                    One-click workflow that searches papers, news, and repositories, then summarizes new insights with
+                    an open-source or local model you can run on your computer.
+                </p>
+            </div>
+            <div class="automation-grid">
+                <div class="automation-panel">
+                    <h3>Configure your run</h3>
+                    <form class="automation-form">
+                        <label>
+                            Research focus
+                            <input type="text" name="focus" placeholder="e.g., trustworthy agent evaluations" required>
+                        </label>
+                        <label>
+                            Preferred model runtime
+                            <select name="runtime">
+                                <option value="open-source">Open-source API (OpenRouter, Together, Fireworks)</option>
+                                <option value="local">Local LLM (Ollama, LM Studio, vLLM)</option>
+                            </select>
+                        </label>
+                        <label>
+                            Local model command
+                            <input type="text" name="command" placeholder="ollama run llama3.1:8b --format json">
+                        </label>
+                        <fieldset>
+                            <legend>Sources to search</legend>
+                            <label><input type="checkbox" name="sources" value="arxiv" checked> arXiv + OpenReview</label>
+                            <label><input type="checkbox" name="sources" value="news" checked> Research news + press</label>
+                            <label><input type="checkbox" name="sources" value="repos"> GitHub + model releases</label>
+                            <label><input type="checkbox" name="sources" value="scholar"> Scholar alerts</label>
+                        </fieldset>
+                        <label>
+                            API key (optional)
+                            <input type="password" name="apiKey" placeholder="Stored locally in your browser">
+                        </label>
+                        <button class="button primary" type="button" data-run-pipeline>Run real-time update</button>
+                    </form>
+                    <div class="automation-note">
+                        <p><strong>Logic blueprint:</strong> Collect → rank → summarize → synthesize research directions.</p>
+                        <ol>
+                            <li>Query sources with your focus keywords and filters.</li>
+                            <li>Deduplicate and score items by relevance and novelty.</li>
+                            <li>Summarize with your chosen model (API or local LLM).</li>
+                            <li>Generate updated research hypotheses and next steps.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="automation-panel">
+                    <h3>Live run output</h3>
+                    <div class="automation-status" aria-live="polite">
+                        <p>Ready to run. Choose a focus and click “Run real-time update”.</p>
+                    </div>
+                    <div class="automation-results">
+                        <h4>Updated research ideas</h4>
+                        <ul>
+                            <li>Waiting for the first run...</li>
+                        </ul>
+                    </div>
+                    <div class="automation-code">
+                        <h4>Local program outline</h4>
+                        <pre><code># 1) Search sources (example with arXiv + news API)
+python3 tools/research_fetch.py --query "trustworthy agents" --limit 20
+
+# 2) Summarize with a local LLM (Ollama)
+python3 tools/research_summarize.py --input research_results.json --runtime local --model llama3.1:8b
+
+# 3) Synthesize new ideas
+python3 tools/research_synthesize.py --input research_summaries.json --output updated_ideas.md</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="assumptions" class="section">
             <div class="section-header">
                 <h2>Context & Assumptions to Confirm</h2>

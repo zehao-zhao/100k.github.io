@@ -138,6 +138,89 @@ main {
     margin-bottom: 0;
 }
 
+.automation-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.automation-panel {
+    background: var(--card);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(15, 74, 165, 0.08);
+}
+
+.automation-form {
+    display: grid;
+    gap: 16px;
+}
+
+.automation-form label,
+.automation-form legend {
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.automation-form input,
+.automation-form select {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    font-size: 0.95rem;
+}
+
+.automation-form fieldset {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: grid;
+    gap: 8px;
+}
+
+.automation-form fieldset label {
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+}
+
+.automation-note {
+    margin-top: 20px;
+    background: var(--accent);
+    border-radius: 12px;
+    padding: 16px;
+    color: var(--secondary);
+}
+
+.automation-status {
+    background: var(--accent);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    color: var(--secondary);
+}
+
+.automation-results ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.automation-code pre {
+    background: #0b1f3a;
+    color: #f5f7fb;
+    border-radius: 12px;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.automation-code code {
+    font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
 .steps {
     background: var(--card);
     border-radius: 16px;
